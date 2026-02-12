@@ -74,20 +74,20 @@ Moralis provides **Streams** for webhook-based event monitoring, but **does not 
 
 ### Stress Test Results
 
-Independent benchmarks reveal significant performance differences:
+Internal benchmarks from Mobula reveal significant performance differences ([source](https://blog.mobula.io/moralis-api-alternatives/)):
 
 **Mobula API:**
 - Successfully handled 20 simultaneous requests with 100% success rate
-- Average endpoint latency: 10-200ms
+- Average response time: 199ms
 - No caching ensures data accuracy
 - Consistent performance under high load
 
 **Moralis API:**
-- During stress tests, managed 20 simultaneous requests with 0% success rate (as reported by third-party analysis)
-- Endpoint latency not publicly disclosed
+- During stress tests, managed 20 simultaneous requests with 0% success rate
+- Average response time: 769ms (when successful)
 - Rate limiting on free tier (25 requests/second)
 
-**Real-world impact:** For production applications with burst traffic (e.g., market volatility events), Mobula's infrastructure demonstrates superior reliability.
+**Real-world impact:** For production applications with burst traffic (e.g., market volatility events), Mobula's infrastructure demonstrates superior reliability under concurrent load scenarios.
 
 ### Data Freshness: Real-Time vs Cached
 
